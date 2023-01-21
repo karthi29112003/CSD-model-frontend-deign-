@@ -1,0 +1,676 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes body {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  10% {
+    background-color: rgb(207, 176, 207);
+  }
+  20% {
+    background-color: rgb(219, 161, 219);
+  }
+  30% {
+    background-color: rgb(217, 134, 217);
+  }
+  40% {
+    background-color: rgb(204, 110, 204);
+  }
+  50% {
+    background-color: rgb(240, 79, 240);
+  }
+  60% {
+    background-color: rgb(206, 42, 206);
+  }
+
+  80% {
+    background-color: rgb(216, 29, 216);
+  }
+
+  100% {
+    background-color: rgb(215, 41, 215);
+  }
+}
+
+@keyframes content {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  10% {
+    color: rgb(215, 212, 212);
+  }
+  20% {
+    color: rgb(190, 190, 190);
+  }
+  30% {
+    color: rgb(110, 107, 107);
+  }
+  40% {
+    color: rgb(98, 95, 95);
+  }
+  50% {
+    color: rgb(86, 84, 84);
+  }
+  60% {
+    color: rgb(69, 68, 68);
+  }
+  70% {
+    color: rgb(59, 58, 58);
+  }
+  80% {
+    color: rgb(48, 48, 48);
+  }
+  90% {
+    color: rgb(24, 24, 24);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+
+body {
+  width: 100%;
+  min-width: 100vh;
+  animation-name: body;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  overflow: hidden;
+  background-color: rgb(219, 21, 215);
+}
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: content;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  gap: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #fff;
+  font-size: 2rem;
+}
+
+.circle {
+  position: absolute;
+  top: 30%;
+  border: 10px solid #000;
+  width: 600px;
+  right: 29%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 196, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: cir;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.circle2 {
+  position: absolute;
+  top: 30%;
+  border: 10px solid #000;
+  width: 600px;
+  right: 29%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: cir;
+  animation-duration: 4.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.circle3 {
+  position: absolute;
+  top: 30%;
+  border: 10px solid #000;
+  width: 600px;
+  right: 29%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 238, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: cir;
+  animation-duration: 4.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.circle4 {
+  position: absolute;
+  top: 30%;
+  border: 10px solid #000;
+  width: 600px;
+  right: 29%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(21, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: cir;
+  animation-duration: 4.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.circle5 {
+  position: absolute;
+  top: 30%;
+  border: 10px solid #000;
+  width: 600px;
+  right: 29%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(0, 242, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: cir;
+  animation-duration: 4.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes cir {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.box5 {
+  position: absolute;
+  top: 11%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box1 {
+  position: absolute;
+  top: 3%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(94, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box2 {
+  position: absolute;
+  top: 5%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(208, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box3 {
+  position: absolute;
+  top: 7%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(0, 38, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box4 {
+  position: absolute;
+  top: 9%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 115, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box10 {
+  position: absolute;
+  bottom: 11%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box9 {
+  position: absolute;
+  bottom: 9%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(94, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box8 {
+  position: absolute;
+  bottom: 7%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(208, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box7 {
+  position: absolute;
+  bottom: 5%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(0, 38, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box6 {
+  position: absolute;
+  bottom: 3%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 115, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box15 {
+  position: absolute;
+  bottom: 11%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box14 {
+  position: absolute;
+  bottom: 9%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(94, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box13 {
+  position: absolute;
+  bottom: 7%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(208, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box12 {
+  position: absolute;
+  bottom: 5%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(0, 38, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box11 {
+  position: absolute;
+  bottom: 3%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 115, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box10 {
+  position: absolute;
+  bottom: 11%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box9 {
+  position: absolute;
+  bottom: 9%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(94, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box8 {
+  position: absolute;
+  bottom: 7%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(208, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box7 {
+  position: absolute;
+  bottom: 5%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(0, 38, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box6 {
+  position: absolute;
+  bottom: 3%;
+  border: 5px solid #000;
+  width: 100px;
+  right: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 115, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box20 {
+  position: absolute;
+  top: 11%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box19 {
+  position: absolute;
+  top: 9%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(94, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box18 {
+  position: absolute;
+  top: 7%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(208, 255, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box17 {
+  position: absolute;
+  top: 5%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(0, 38, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.box16 {
+  position: absolute;
+  top: 3%;
+  border: 5px solid #000;
+  width: 100px;
+  left: -1%;
+  z-index: -1;
+  display: flex;
+  background-color: rgb(255, 115, 0);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  /* border-radius: 50%; */
+  animation-name: cir;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

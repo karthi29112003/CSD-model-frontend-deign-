@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&family=Monoton&family=Passions+Conflict&family=Raleway&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&family=Monoton&family=Passions+Conflict&family=Raleway&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(to left, rgb(180, 123, 123), rgb(150, 231, 231)); */
+  overflow: hidden;
+}
+
+@keyframes color {
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  10% {
+    color: yellow;
+  }
+  20% {
+    color: rgb(51, 255, 0);
+  }
+  30% {
+    color: rgb(0, 208, 255);
+  }
+  40% {
+    color: rgb(0, 81, 255);
+  }
+  50% {
+    color: rgb(230, 0, 255);
+  }
+  60% {
+    color: rgb(13, 0, 132);
+  }
+  70% {
+    color: rgb(255, 0, 242);
+  }
+  80% {
+    color: white;
+  }
+  90% {
+    color: black;
+  }
+  100% {
+    color: rgb(255, 89, 0);
+  }
+}
+
+@keyframes CSD_animation {
+  from {
+    transform: translateY(12.4rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes j {
+  from {
+    font-size: 0rem;
+  }
+  to {
+    font-size: 5rem;
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: translateY(10rem);
+  }
+  to {
+    transform: translateY(60rem);
+  }
+}
+
+/* font-family: "Bebas Neue", cursive;
+font-family: "Caveat", cursive;
+font-family: "Monoton", cursive;
+font-family: "Passions Conflict", cursive;
+font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif;
+
+font-family: "Bebas Neue", cursive;
+font-family: "Caveat", cursive;
+font-family: "Monoton", cursive;
+font-family: "Passions Conflict", cursive;
+font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif; */
+
+/* bg */
+.bg img {
+  width: 100%;
+  height: 100vh;
+  /* opacity: 0.8; */
+}
+.bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* content */
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 16rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* z-index: -1; */
+}
+
+/* CSD */
+.CSD {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Caveat", cursive;
+  font-family: "Monoton", cursive;
+  font-family: "Passions Conflict", cursive;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  animation-name: j;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.CSD {
+  animation-name: color;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.CSD:hover {
+  text-shadow: 1px 1px 1px rgb(7, 101, 141);
+}
+.csd_abbrevation {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Caveat", cursive;
+  font-family: "Monoton", cursive;
+  font-family: "Passions Conflict", cursive;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: italic;
+  animation-name: CSD_animation;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.content button {
+  animation-name: CSD_animation;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  /* z-index: -1; */
+}
+
+button:active {
+  font-size: 1.35rem;
+  color: rgb(0, 166, 255);
+  background-color: black;
+  color: aliceblue;
+}
+
+.party img {
+  /* border: 10px solid black; */
+  margin-top: -65rem;
+  position: absolute;
+  /* width: 100%;
+  height: 100vh; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* z-index: 1; */
+}
+.party {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* border: 2px solid #000; */
+  animation-name: pop;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* z-index: 1; */
+}
+
+.letsgo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.letsgo button {
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+  border: none;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
